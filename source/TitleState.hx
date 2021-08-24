@@ -332,7 +332,7 @@ class TitleState extends MusicBeatState
 			{
 				// Get current version of Kade Engine
 				
-				var http = new haxe.Http("https://raw.githubusercontent.com/KadeDev/Kade-Engine/master/version.downloadMe");
+				var http = new haxe.Http("https://raw.githubusercontent.com/Juanen100/VS-Juize/main/version.downloadMe");
 				var returnedData:Array<String> = [];
 				
 				http.onData = function (data:String)
@@ -343,10 +343,16 @@ class TitleState extends MusicBeatState
 					{				
 						if(FlxG.save.data.language)
 						{
+							trace('outdated lol! ' + returnedData[0] + ' != ' + MainMenuState.kadeEngineVer);
+							OutdatedSubStateEs.needVer = returnedData[0];
+							OutdatedSubStateEs.currChanges = returnedData[1];
 							FlxG.switchState(new OutdatedSubStateEs());
 						}
 						else
 						{
+							trace('pobre que no tiene el actualizado ' + returnedData[0] + ' != ' + MainMenuState.kadeEngineVer);
+							OutdatedSubState.needVer = returnedData[0];
+							OutdatedSubState.currChanges = returnedData[1];
 							FlxG.switchState(new OutdatedSubState());
 						}
 					}
@@ -354,11 +360,11 @@ class TitleState extends MusicBeatState
 					{	
 						if(FlxG.save.data.language)
 						{
-							FlxG.switchState(new OutdatedSubStateEs());
+							FlxG.switchState(new AudiphonesState());
 						}
 						else
 						{
-							FlxG.switchState(new OutdatedSubState());
+							FlxG.switchState(new AudiphonesState());
 						}
 					}
 				}
@@ -368,12 +374,12 @@ class TitleState extends MusicBeatState
 				  if(FlxG.save.data.language) //Yeah, u failed 'cause ur internet is trash but let JUMP into it because cool people do that :)
 				  {
 						trace('tu internet es mierda lmao');
-				  		FlxG.switchState(new OutdatedSubStateEs());
+				  		FlxG.switchState(new AudiphonesState()); //'Cause u cant see if u are updated u go to the warningstate lol
 				  }
 				  else
 				  {
 						trace('ur internet is fucking trash lmao');
-				  		FlxG.switchState(new OutdatedSubState());
+				  		FlxG.switchState(new AudiphonesState());
 				  }
 				}
 				

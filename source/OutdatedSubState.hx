@@ -43,13 +43,13 @@ class OutdatedSubState extends MusicBeatState
 		add(kadeLogo);
 		
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
-			"\nYou are on "
-			+ MainMenuStateSpanish.kadeEngineVer
-			+ "\nWhich is a Beta Release."
-			+ "\nIf you are Juize report bugs on the DM"
-			+ "\nIf you are watching this on the final version,"
-			+ "\ncontact now a developer"
-			+ "\nPress Escape/Enter to continue",
+			"Your VS Juize Mod is outdated!\nYou are on "
+			+ MainMenuState.kadeEngineVer
+			+ "\nwhile the most recent version is " + needVer + "."
+			+ "\n\nWhat's new:\n\n"
+			+ currChanges
+			+ "\n& more changes and bugfixes in the full changelog"
+			+ "\n\nPress Space to download the lastest version\nor ESCAPE to ignore this",
 			32);
 		
 		txt.setFormat("VCR OSD Mono", 32, FlxColor.fromRGB(200, 200, 200), CENTER);
@@ -86,10 +86,11 @@ class OutdatedSubState extends MusicBeatState
 	{
 		if (controls.ACCEPT)
 		{
-			FlxG.switchState(new AudiphonesState());
+			fancyOpenURL("https://github.com/Juanen100/VS-Juize/releases");
 		}
 		if (controls.BACK)
 		{
+			leftState = true;
 			FlxG.switchState(new AudiphonesState());
 		}
 		super.update(elapsed);
