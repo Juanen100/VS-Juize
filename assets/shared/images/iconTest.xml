@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="iconTest.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="JuanenBrein0000" x="0" y="0" width="398" height="197"/>
+	<SubTexture name="JuanenEpicSimbolXD0000" x="398" y="0" width="400" height="367"/>
+</TextureAtlas>

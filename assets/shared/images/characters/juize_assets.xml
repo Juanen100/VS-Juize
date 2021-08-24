@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BoyFriend_Assets.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="juize down instancia 10000" x="0" y="0" width="336" height="440" frameX="0" frameY="-4" frameWidth="343" frameHeight="444"/>
+	<SubTexture name="juize down instancia 10001" x="0" y="0" width="336" height="440" frameX="0" frameY="-4" frameWidth="343" frameHeight="444"/>
+	<SubTexture name="juize down instancia 10002" x="336" y="0" width="343" height="444"/>
+	<SubTexture name="juize down instancia 10003" x="336" y="0" width="343" height="444"/>
+	<SubTexture name="juize down instancia 10004" x="336" y="0" width="343" height="444"/>
+	<SubTexture name="juize down instancia 10005" x="336" y="0" width="343" height="444"/>
+	<SubTexture name="juize down instancia 10006" x="336" y="0" width="343" height="444"/>
+	<SubTexture name="juize down instancia 10007" x="336" y="0" width="343" height="444"/>
+	<SubTexture name="juize down instancia 10008" x="336" y="0" width="343" height="444"/>
+	<SubTexture name="juize down instancia 10009" x="336" y="0" width="343" height="444"/>
+	<SubTexture name="juize down instancia 10010" x="336" y="0" width="343" height="444"/>
+	<SubTexture name="juize down instancia 10011" x="336" y="0" width="343" height="444"/>
+	<SubTexture name="juize down instancia 10012" x="336" y="0" width="343" height="444"/>
+	<SubTexture name="juize down instancia 10013" x="336" y="0" width="343" height="444"/>
+	<SubTexture name="juize idle instancia 10000" x="679" y="0" width="289" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10001" x="679" y="0" width="289" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10002" x="968" y="0" width="294" height="438" frameX="-7" frameY="-7" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10003" x="968" y="0" width="294" height="438" frameX="-7" frameY="-7" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10004" x="1262" y="0" width="300" height="445" frameX="0" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10005" x="1262" y="0" width="300" height="445" frameX="0" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10006" x="679" y="0" width="289" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10007" x="679" y="0" width="289" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10008" x="679" y="0" width="289" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10009" x="679" y="0" width="289" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10010" x="679" y="0" width="289" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10011" x="679" y="0" width="289" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10012" x="679" y="0" width="289" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize idle instancia 10013" x="679" y="0" width="289" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize left instancia 10000" x="1562" y="0" width="301" height="445"/>
+	<SubTexture name="juize left instancia 10001" x="1562" y="0" width="301" height="445"/>
+	<SubTexture name="juize left instancia 10002" x="1863" y="0" width="298" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize left instancia 10003" x="1863" y="0" width="298" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize left instancia 10004" x="1863" y="0" width="298" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize left instancia 10005" x="1863" y="0" width="298" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize left instancia 10006" x="1863" y="0" width="298" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize left instancia 10007" x="1863" y="0" width="298" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize left instancia 10008" x="1863" y="0" width="298" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize left instancia 10009" x="1863" y="0" width="298" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize left instancia 10010" x="1863" y="0" width="298" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize left instancia 10011" x="1863" y="0" width="298" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize left instancia 10012" x="1863" y="0" width="298" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize left instancia 10013" x="1863" y="0" width="298" height="445" frameX="-3" frameY="0" frameWidth="301" frameHeight="445"/>
+	<SubTexture name="juize right instancia 10000" x="2161" y="0" width="326" height="445"/>
+	<SubTexture name="juize right instancia 10001" x="2161" y="0" width="326" height="445"/>
+	<SubTexture name="juize right instancia 10002" x="2487" y="0" width="319" height="445" frameX="-7" frameY="0" frameWidth="326" frameHeight="445"/>
+	<SubTexture name="juize right instancia 10003" x="2487" y="0" width="319" height="445" frameX="-7" frameY="0" frameWidth="326" frameHeight="445"/>
+	<SubTexture name="juize right instancia 10004" x="2487" y="0" width="319" height="445" frameX="-7" frameY="0" frameWidth="326" frameHeight="445"/>
+	<SubTexture name="juize right instancia 10005" x="2487" y="0" width="319" height="445" frameX="-7" frameY="0" frameWidth="326" frameHeight="445"/>
+	<SubTexture name="juize right instancia 10006" x="2487" y="0" width="319" height="445" frameX="-7" frameY="0" frameWidth="326" frameHeight="445"/>
+	<SubTexture name="juize right instancia 10007" x="2487" y="0" width="319" height="445" frameX="-7" frameY="0" frameWidth="326" frameHeight="445"/>
+	<SubTexture name="juize right instancia 10008" x="2487" y="0" width="319" height="445" frameX="-7" frameY="0" frameWidth="326" frameHeight="445"/>
+	<SubTexture name="juize right instancia 10009" x="2487" y="0" width="319" height="445" frameX="-7" frameY="0" frameWidth="326" frameHeight="445"/>
+	<SubTexture name="juize right instancia 10010" x="2487" y="0" width="319" height="445" frameX="-7" frameY="0" frameWidth="326" frameHeight="445"/>
+	<SubTexture name="juize right instancia 10011" x="2487" y="0" width="319" height="445" frameX="-7" frameY="0" frameWidth="326" frameHeight="445"/>
+	<SubTexture name="juize right instancia 10012" x="2487" y="0" width="319" height="445" frameX="-7" frameY="0" frameWidth="326" frameHeight="445"/>
+	<SubTexture name="juize right instancia 10013" x="2487" y="0" width="319" height="445" frameX="-7" frameY="0" frameWidth="326" frameHeight="445"/>
+	<SubTexture name="juize up instancia 10000" x="2806" y="0" width="329" height="448"/>
+	<SubTexture name="juize up instancia 10001" x="2806" y="0" width="329" height="448"/>
+	<SubTexture name="juize up instancia 10002" x="3135" y="0" width="329" height="445" frameX="0" frameY="-2" frameWidth="329" frameHeight="448"/>
+	<SubTexture name="juize up instancia 10003" x="3135" y="0" width="329" height="445" frameX="0" frameY="-2" frameWidth="329" frameHeight="448"/>
+	<SubTexture name="juize up instancia 10004" x="3135" y="0" width="329" height="445" frameX="0" frameY="-2" frameWidth="329" frameHeight="448"/>
+	<SubTexture name="juize up instancia 10005" x="3135" y="0" width="329" height="445" frameX="0" frameY="-2" frameWidth="329" frameHeight="448"/>
+	<SubTexture name="juize up instancia 10006" x="3135" y="0" width="329" height="445" frameX="0" frameY="-2" frameWidth="329" frameHeight="448"/>
+	<SubTexture name="juize up instancia 10007" x="3135" y="0" width="329" height="445" frameX="0" frameY="-2" frameWidth="329" frameHeight="448"/>
+	<SubTexture name="juize up instancia 10008" x="3135" y="0" width="329" height="445" frameX="0" frameY="-2" frameWidth="329" frameHeight="448"/>
+	<SubTexture name="juize up instancia 10009" x="3135" y="0" width="329" height="445" frameX="0" frameY="-2" frameWidth="329" frameHeight="448"/>
+	<SubTexture name="juize up instancia 10010" x="3135" y="0" width="329" height="445" frameX="0" frameY="-2" frameWidth="329" frameHeight="448"/>
+	<SubTexture name="juize up instancia 10011" x="3135" y="0" width="329" height="445" frameX="0" frameY="-2" frameWidth="329" frameHeight="448"/>
+	<SubTexture name="juize up instancia 10012" x="3135" y="0" width="329" height="445" frameX="0" frameY="-2" frameWidth="329" frameHeight="448"/>
+	<SubTexture name="juize up instancia 10013" x="3135" y="0" width="329" height="445" frameX="0" frameY="-2" frameWidth="329" frameHeight="448"/>
+</TextureAtlas>

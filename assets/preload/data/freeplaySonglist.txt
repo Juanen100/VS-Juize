@@ -1,0 +1,6 @@
+Wake Up:juize:1
+Rolling:juize:1
+Remix:juize:1
+Ignite:juize-angry:2
+Bruh:juize-angry:2
+Century:juize:3
