@@ -64,9 +64,9 @@ This game was made with love to Newgrounds and its community. Extra love to Tom 
 - [The contributors](https://github.com/KadeDev/Kade-Engine/graphs/contributors)
 
 ### VS Juize
-- [Juizepanka] - Director and sprites stuff
-- [EdgarXammar/DiscordTriangle] - Artist
-- [Juanen100] - Programmer
-- [SamuramongeDev] - Charter
-- [BitfoxOriginal] and [Khary] - Composers
-- [ItsNexxos] - Fixing sprites and people on the background (He drew it)
+- **Juizepanka** - Director and sprites stuff
+- **EdgarXammar/DiscordTriangle** - Artist
+- **Juanen100** - Programmer
+- **SamuramongeDev** - Charter
+- **BitfoxOriginal** and **Khary** - Composers
+- **ItsNexxos** - Fixing sprites and people on the background (He drew it)
