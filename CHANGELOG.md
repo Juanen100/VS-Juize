@@ -4,5 +4,6 @@
 
 ### Added
 - Shitty Outdated Screen lol
+- A secret song (shitty song)
 
   - Nothing else XD
