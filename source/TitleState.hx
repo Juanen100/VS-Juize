@@ -360,10 +360,12 @@ class TitleState extends MusicBeatState
 					{	
 						if(FlxG.save.data.language)
 						{
+							trace('U gotItUpdatedXD ' + returnedData[0] + ' = ' + MainMenuState.kadeEngineVer);
 							FlxG.switchState(new AudiphonesState());
 						}
 						else
 						{
+							trace('U gotItUpdatedXD ' + returnedData[0] + ' = ' + MainMenuState.kadeEngineVer);
 							FlxG.switchState(new AudiphonesState());
 						}
 					}
