@@ -26,45 +26,45 @@ class OptionsMenu extends MusicBeatState
 	var options:Array<OptionCategory> = [
 			new OptionCategory("Gameplay", [
 				new DFJKOption(controls),
-				new DownscrollOption("Change the layout of the strumline."),
-				new GhostTapOption("Ghost Tapping is when you tap a direction and it doesn't give you a miss."),
-				new Middlescroll("This activates the Optimitation option from 1.6 BUT you can see the scenario"),
-				new Judgement("Customize your Hit Timings (LEFT or RIGHT)"),
-				new PlayOsuSound("Play the osu sound meanwhile you play"),
+				new DownscrollOption("Cambia la posición de las flechas."),
+				new GhostTapOption("Ghost Tapping es cuando le das a una dirección pero no te da fallo."),
+				new Middlescroll("Activa la opción de Optimización PERO puedes ver el escenario"),
+				new Judgement("Customiza el tiempo de dar a las notas (Derecha or Izquierda)"),
+				new PlayOsuSound("Reproduce el hitsound de Osu mientras juegas"),
 				#if desktop
-				new FPSCapOption("Cap your FPS"),
+				new FPSCapOption("Cambia los FPS"),
 				#end
-				new ScrollSpeedOption("Change your scroll speed (1 = Chart dependent)"),
-				new AccuracyDOption("Change how accuracy is calculated. (Accurate = Simple, Complex = Milisecond Based)"),
-				new ResetButtonOption("Toggle pressing R to gameover."),
+				new ScrollSpeedOption("Cambia tu velocidad de scroll (1 = Depende del chart)"),
+				new AccuracyDOption("Cambia como tu precisión es calculada. (Acertada = Simple, Complex = Basada en Milisegundos)"),
+				new ResetButtonOption("Decide si pulsando R reseteas el personaje."),
 				// new OffsetMenu("Get a note offset based off of your inputs!"), (This is a test Kade Dev did)
-				new CustomizeGameplay("Drag'n'Drop Gameplay Modules around to your preference")
+				new CustomizeGameplay("Arrastra y mueve los elementos de Gameplay donde quieras")
 			]),
 
 			new OptionCategory("Apariencia", [
 				#if desktop
-				new DistractionsAndEffectsOption("Toggle stage distractions that can hinder your gameplay."),
-				new NoteSplashOption("It is used to deactivate the Note Splash. Made By PabloelproxD210"),
-				new CustomNotes("Customize the Notes. (Enter for Normal Notes, Alt for Juize Notes, Right for Neo Notes)"),
-				new LanguageOption("Choose the language you want"),
-				new RainbowFPSOption("Make the FPS Counter Rainbow"),
-				new AccuracyOption("Display accuracy information."),
-				new NPSDisplayOption("Shows your current Notes Per Second."),
-				new SongPositionOption("Show the songs current position (as a bar)"),
-				new CpuStrums("CPU's strumline lights up when a note hits it."),
+				new DistractionsAndEffectsOption("Cambia si quieres las distracciones del escenario."),
+				new NoteSplashOption("Se usa para activar las NoteSplash. Hecha por PabloelproxD210"),
+				new CustomNotes("Customiza las Notas. (Enter para las Notas Normales, Izquierda para las Notas de Juize, Derecha para las Notas Neo)"),
+				new LanguageOption("Elije el idioma que quieras"),
+				new RainbowFPSOption("Haz el contador de FPS arcoiris"),
+				new AccuracyOption("Muestra la información de la Precisión."),
+				new NPSDisplayOption("Enseña tus Notas por Segundo."),
+				new SongPositionOption("Enseña la actual posición de las canciones (como una barra)"),
+				new CpuStrums("Las flechas de la CPU se iluminan cuando tocan una nota."),
 				#else
-				new DistractionsAndEffectsOption("Toggle stage distractions that can hinder your gameplay."),
+				new DistractionsAndEffectsOption("Cambia si quieres las distracciones del escenario."),
 				#end
 			]),
 			
 			new OptionCategory("Miscelaneo", [
 				#if desktop
-				new FPSOption("Toggle the FPS Counter"),
-				new ReplayOption("View replays"),
+				new FPSOption("Enseña el contador de FPS"),
+				new ReplayOption("Ver replays"),
 				#end
-				new FlashingLightsOption("Toggle flashing lights that can cause epileptic seizures and strain."),
-				new WatermarkOption("Enable and disable all watermarks from the engine."),
-				new BotPlay("Showcase your charts and mods with autoplay.")
+				new FlashingLightsOption("Desactiva las notas parapadeantes que puedan causar epilepsia."),
+				new WatermarkOption("Activar y desactivar la marca de agua del engine."),
+				new BotPlay("Enseña tus charts con la opción de autoplay.")
 			])
 	];
 
