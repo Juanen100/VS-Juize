@@ -54,6 +54,8 @@ class FreeplayState extends MusicBeatState
 		for (i in 0...initSonglist.length)
 		{
 			/*
+			This was for the old way of adding songs, but im too lazy to remove it lol
+
 			var data:Array<String> = initSonglist[i].split(':');
 			songs.push(new SongMetadata(data[0], Std.parseInt(data[2]), data[1]));
 			*/
@@ -61,7 +63,7 @@ class FreeplayState extends MusicBeatState
 			if(!(data[0]=='Century')){ //This thing add stuff to the Freeplay except the secret song lol
 				songs.push(new SongMetadata(data[0], Std.parseInt(data[2]), data[1]));
 			}
-			else if(FlxG.save.data.centuryUnlockedlol && data[0]=='Century') //If the Freeplay list checks that Century is there and is unlocked is added to the list
+			else if(FlxG.save.data.centuryUnlockedlol && data[0]=='Century') //If the Freeplay list checks that Century is there and is unlocked, it's added to the list
 				songs.push(new SongMetadata(data[0], Std.parseInt(data[2]), data[1]));
 		}
 

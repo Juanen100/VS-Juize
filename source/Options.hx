@@ -70,6 +70,7 @@ class Option
 	private function updateDisplay():String { return throw "stub!"; }
 	public function left():Bool { return throw "stub!"; }
 	public function right():Bool { return throw "stub!"; }
+	public function f4():Bool { return throw "i hate you kade (jk)"; }
 }
 
 
@@ -267,18 +268,35 @@ class CustomNotes extends Option
 		{
 			super();
 			description = desc;
+			acceptValues = true;
 		}
-	
+		
 		public override function press():Bool
 		{
-			FlxG.save.data.notes = !FlxG.save.data.notes;
-			display = updateDisplay();
+			FlxG.save.data.notes = 'Normal';
 			return true;
 		}
 	
+		public override function right():Bool 
+		{
+			FlxG.save.data.notes = 'Neo';
+			return true;
+		}
+	
+		public override function left():Bool 
+		{
+			FlxG.save.data.notes = 'Juize';
+			return true;
+		}
+		
 		private override function updateDisplay():String
 		{
-			return FlxG.save.data.notes ? "Neo Arrows" : "Normal Arrows";
+			return "Custom Notes " + FlxG.save.data.notes;
+		}
+	
+		override function getValue():String
+		{
+			return "Current Note: " + FlxG.save.data.notes;
 		}
 }
 
