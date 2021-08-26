@@ -4,6 +4,8 @@ This is a in development mod of [Friday Night Funkin](https://ninja-muffin24.itc
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+It isnt working lol
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
