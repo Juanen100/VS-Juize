@@ -70,7 +70,7 @@ class Option
 	private function updateDisplay():String { return throw "stub!"; }
 	public function left():Bool { return throw "stub!"; }
 	public function right():Bool { return throw "stub!"; }
-	public function f4():Bool { return throw "i hate you kade (jk)"; }
+	public function alt():Bool { return throw "i hate you kade (jk)"; }
 }
 
 
@@ -270,28 +270,31 @@ class CustomNotes extends Option
 			description = desc;
 			acceptValues = true;
 		}
-		
+
 		public override function press():Bool
 		{
 			FlxG.save.data.notes = 'Normal';
+			display = "Custom Note - " + FlxG.save.data.notes;
 			return true;
 		}
 	
 		public override function right():Bool 
 		{
 			FlxG.save.data.notes = 'Neo';
+			display = "Custom Note - " + FlxG.save.data.notes;
 			return true;
 		}
 	
 		public override function left():Bool 
 		{
 			FlxG.save.data.notes = 'Juize';
+			display = "Custom Note - " + FlxG.save.data.notes;
 			return true;
 		}
 		
 		private override function updateDisplay():String
 		{
-			return "Custom Notes " + FlxG.save.data.notes;
+			return "Custom Note - " + FlxG.save.data.notes;
 		}
 	
 		override function getValue():String
