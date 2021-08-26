@@ -45,7 +45,7 @@ class OptionsMenuEn extends MusicBeatState
 				#if desktop
 				new DistractionsAndEffectsOption("Toggle stage distractions that can hinder your gameplay."),
 				new NoteSplashOption("It is used to deactivate the Note Splash. Made By PabloelproxD210"),
-				new CustomNotes("Customize the Notes. (Enter for Normal Notes, Alt for Juize Notes, Right for Neo Notes)"),
+				new CustomNotes("Customize the Notes. (Enter for Normal Notes, Left for Juize Notes, Right for Neo Notes)"),
 				new LanguageOption("Choose the language you want"),
 				new RainbowFPSOption("Make the FPS Counter Rainbow"),
 				new AccuracyOption("Display accuracy information."),

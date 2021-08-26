@@ -44,7 +44,7 @@ class OutdatedSubStateEs extends MusicBeatState
 		
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
 			"Tu Mod de VS Juize esta desactualizado!\nEstas en "
-			+ MainMenuStateSpanish.kadeEngineVer
+			+ MainMenuStateSpanish.juizeVer
 			+ "\nmientras que la versión más reciente es " + needVer + "."
 			+ "\n\nLo nuevo:\n\n"
 			+ currChanges

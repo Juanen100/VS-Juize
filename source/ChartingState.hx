@@ -496,12 +496,9 @@ class ChartingState extends MusicBeatState
 
 		/*player2 = new Character(0,gridBG.y, _song.player2);
 		player1 = new Boyfriend(player2.width * 0.2,gridBG.y + player2.height, _song.player1);
-
 		player1.y = player1.y - player1.height;
-
 		player2.setGraphicSize(Std.int(player2.width * 0.2));
 		player1.setGraphicSize(Std.int(player1.width * 0.2));
-
 		UI_box.add(player1);
 		UI_box.add(player2);*/
 
@@ -549,7 +546,6 @@ class ChartingState extends MusicBeatState
 			loopCheck.checked = curNoteSelected.doesLoop;
 			tooltips.add(loopCheck, {title: 'Section looping', body: "Whether or not it's a simon says style section", style: tooltipType});
 			bullshitUI.add(loopCheck);
-
 		 */
 	}
 
@@ -1238,9 +1234,8 @@ class ChartingState extends MusicBeatState
 			var daNoteInfo = i[1];
 			var daStrumTime = i[0];
 			var daSus = i[2];
-			var daType = i[3];
 
-			var note:Note = new Note(daStrumTime, daNoteInfo % 4, daType);
+			var note:Note = new Note(daStrumTime, daNoteInfo % 4,null,false);
 			note.sustainLength = daSus;
 			note.setGraphicSize(GRID_SIZE, GRID_SIZE);
 			note.updateHitbox();
@@ -1394,11 +1389,6 @@ class ChartingState extends MusicBeatState
 		var noteStrum = getStrumTime(dummyArrow.y) + sectionStartTime();
 		var noteData = Math.floor(FlxG.mouse.x / GRID_SIZE);
 		var noteSus = 0;
-		var noteType = 0;
-		if (FlxG.keys.pressed.ONE)
-			noteType = 1;
-		if (FlxG.keys.pressed.ALT)
-			noteType = 2;
 
 		if (n != null)
 			_song.notes[curSection].sectionNotes.push([n.strumTime, n.noteData, n.sustainLength]);
@@ -1429,23 +1419,18 @@ class ChartingState extends MusicBeatState
 		function calculateSectionLengths(?sec:SwagSection):Int
 		{
 			var daLength:Int = 0;
-
 			for (i in _song.notes)
 			{
 				var swagLength = i.lengthInSteps;
-
 				if (i.typeOfSection == Section.COPYCAT)
 					swagLength * 2;
-
 				daLength += swagLength;
-
 				if (sec != null && sec == i)
 				{
 					trace('swag loop??');
 					break;
 				}
 			}
-
 			return daLength;
 	}*/
 	private var daSpacing:Float = 0.3;

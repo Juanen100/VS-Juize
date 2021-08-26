@@ -44,7 +44,7 @@ class OutdatedSubState extends MusicBeatState
 		
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
 			"Your VS Juize Mod is outdated!\nYou are on "
-			+ MainMenuState.kadeEngineVer
+			+ MainMenuState.juizeVer
 			+ "\nwhile the most recent version is " + needVer + "."
 			+ "\n\nWhat's new:\n\n"
 			+ currChanges

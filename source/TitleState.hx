@@ -339,18 +339,18 @@ class TitleState extends MusicBeatState
 				{
 					returnedData[0] = data.substring(0, data.indexOf(';'));
 					returnedData[1] = data.substring(data.indexOf('-'), data.length);
-				  	if (!MainMenuState.kadeEngineVer.contains(returnedData[0].trim()) && !OutdatedSubState.leftState && MainMenuState.nightly == "")
+				  	if (!MainMenuState.juizeVer.contains(returnedData[0].trim()) && !OutdatedSubState.leftState && MainMenuState.nightly == "")
 					{				
 						if(FlxG.save.data.language)
 						{
-							trace('outdated lol! ' + returnedData[0] + ' != ' + MainMenuState.kadeEngineVer);
+							trace('outdated lol! ' + returnedData[0] + ' != ' + MainMenuState.juizeVer);
 							OutdatedSubStateEs.needVer = returnedData[0];
 							OutdatedSubStateEs.currChanges = returnedData[1];
 							FlxG.switchState(new OutdatedSubStateEs());
 						}
 						else
 						{
-							trace('pobre que no tiene el actualizado ' + returnedData[0] + ' != ' + MainMenuState.kadeEngineVer);
+							trace('pobre que no tiene el actualizado ' + returnedData[0] + ' != ' + MainMenuState.juizeVer);
 							OutdatedSubState.needVer = returnedData[0];
 							OutdatedSubState.currChanges = returnedData[1];
 							FlxG.switchState(new OutdatedSubState());
@@ -360,12 +360,12 @@ class TitleState extends MusicBeatState
 					{	
 						if(FlxG.save.data.language)
 						{
-							trace('U gotItUpdatedXD ' + returnedData[0] + ' = ' + MainMenuState.kadeEngineVer);
+							trace('U gotItUpdatedXD ' + returnedData[0] + ' = ' + MainMenuState.juizeVer);
 							FlxG.switchState(new AudiphonesState());
 						}
 						else
 						{
-							trace('U gotItUpdatedXD ' + returnedData[0] + ' = ' + MainMenuState.kadeEngineVer);
+							trace('U gotItUpdatedXD ' + returnedData[0] + ' = ' + MainMenuState.juizeVer);
 							FlxG.switchState(new AudiphonesState());
 						}
 					}

@@ -274,21 +274,21 @@ class CustomNotes extends Option
 		public override function press():Bool
 		{
 			FlxG.save.data.notes = 'Normal';
-			display = "Custom Note - " + FlxG.save.data.notes;
+			display = "Custom Note - Normal";
 			return true;
 		}
 	
 		public override function right():Bool 
 		{
 			FlxG.save.data.notes = 'Neo';
-			display = "Custom Note - " + FlxG.save.data.notes;
+			display = "Custom Note - Neo";
 			return true;
 		}
 	
 		public override function left():Bool 
 		{
 			FlxG.save.data.notes = 'Juize';
-			display = "Custom Note - " + FlxG.save.data.notes;
+			display = "Custom Note - Juize";
 			return true;
 		}
 		
