@@ -1522,9 +1522,6 @@ class PlayState extends MusicBeatState
 				var daType = songNotes[3];
 				var swagNote:Note = new Note(daStrumTime, daNoteData, oldNote, false, daType);
 
-				if (!gottaHitNote && FlxG.save.data.middle)
-					continue;
-
 				swagNote.sustainLength = songNotes[2];
 				swagNote.scrollFactor.set(0, 0);
 
@@ -1582,8 +1579,8 @@ class PlayState extends MusicBeatState
 			// FlxG.log.add(i);
 			var babyArrow:FlxSprite = new FlxSprite(0, strumLine.y);
 
-			if (FlxG.save.data.middle && player == 0)
-				continue;
+			if(FlxG.save.data.middle && player==0)
+				babyArrow.visible=false;
 
 			switch (SONG.noteStyle)
 			{
@@ -1713,11 +1710,13 @@ class PlayState extends MusicBeatState
 			}
 
 			babyArrow.animation.play('static');
-			babyArrow.x += 50;
-			babyArrow.x += ((FlxG.width / 2) * player);
+			if(!FlxG.save.data.middle){
+				babyArrow.x += 50;
+				babyArrow.x += ((FlxG.width / 2) * player);
+			}
 
 			if (FlxG.save.data.middle)
-				babyArrow.x -= 275;
+				babyArrow.x += 405;
 			
 			cpuStrums.forEach(function(spr:FlxSprite)
 			{					
@@ -2337,7 +2336,10 @@ class PlayState extends MusicBeatState
 					else
 					{
 						daNote.visible = true;
-						daNote.active = true;
+
+						if((daNote.mustPress || !daNote.mustPress && !FlxG.save.data.middle)){
+							daNote.visible = true;
+						}
 					}
 					
 					if (!daNote.modifiedByLua)
@@ -2407,6 +2409,10 @@ class PlayState extends MusicBeatState
 								}
 							}
 						}
+
+					if(!daNote.mustPress && FlxG.save.data.middle){
+						daNote.visible=false;
+					}
 		
 	
 					if (!daNote.mustPress && daNote.wasGoodHit)

@@ -451,7 +451,7 @@ class TitleState extends MusicBeatState
 				case 2:
 					//U can't use numbers, for some reason the Alphabet doesnt detects number
 					if (Main.watermarks)
-						createCoolText(['Juizepanka', 'EdgarXammar', 'Juanen', 'SamuramongeDev', 'khary', 'BitFoxOriginal', 'ItsNexxos']);
+						createCoolText(['Juizepanka', 'EdgarXammar', 'Juanen', 'SamuramongeDev', 'BitFoxOriginal', 'ItsNexxos']);
 					else
 					{
 						createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
