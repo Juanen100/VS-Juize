@@ -94,6 +94,7 @@ class StoryMenuState extends MusicBeatState
 				if (FlxG.save.data.progress > 1)
 				{
 					weekUnlocked[2] = true;
+					weekUnlocked[3] = true;
 				}
 			}
 

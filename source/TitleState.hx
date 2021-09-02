@@ -521,7 +521,7 @@ class TitleState extends MusicBeatState
 					deleteCoolText();
 				case 2:
 					if (Main.watermarks)
-						createCoolText(['Juizepanka', 'EdgarXammar', 'Juanen', 'SamuramongeDev', 'khary', 'BitFoxOriginal', 'ItsNexxos']);
+						createCoolText(['Juizepanka', 'EdgarXammar', 'Juanen', 'SamuramongeDev', 'BitFoxOriginal', 'ItsNexxos']);
 					else
 					{
 						createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
