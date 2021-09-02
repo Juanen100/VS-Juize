@@ -832,9 +832,9 @@ class PlayState extends MusicBeatState
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 			case 'juize':
-				dad.y = 350;
+				dad.y = 400;
 			case 'juize-angry':
-				dad.y = 350;
+				dad.y = 400;
 		}
 
 
@@ -2960,7 +2960,8 @@ class PlayState extends MusicBeatState
 	
 			comboSpr.velocity.x += FlxG.random.int(1, 10);
 			currentTimingShown.velocity.x += comboSpr.velocity.x;
-			if(!FlxG.save.data.botplay) add(rating);
+			//if(!FlxG.save.data.botplay) 
+			add(rating);
 	
 			if (!curStage.startsWith('school'))
 			{
