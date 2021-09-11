@@ -2442,6 +2442,10 @@ class PlayState extends MusicBeatState
 						
 						if (FlxG.save.data.cpuStrums)
 						{
+							if(FlxG.save.data.botplay)
+							{
+								cpuStrums = playerStrums;
+							}
 							cpuStrums.forEach(function(spr:FlxSprite)
 							{
 								if (Math.abs(daNote.noteData) == spr.ID)
@@ -2765,6 +2769,14 @@ class PlayState extends MusicBeatState
 				totalNotesHit += wife;
 
 			var daRating = daNote.rating;
+			if(FlxG.save.data.botplay)
+			{
+				daRating = 'sick';
+			}
+			else
+			{
+				daRating = daNote.rating;
+			}
 
 			switch(daRating)
 			{
@@ -3118,6 +3130,7 @@ class PlayState extends MusicBeatState
 					pressArray = [false, false, false, false];
 					releaseArray = [false, false, false, false];
 				} 
+				
 				// HOLDS, check for sustain notes
 				if (holdArray.contains(true) && /*!boyfriend.stunned && */ generatedMusic)
 				{

@@ -28,7 +28,7 @@ class CreditsStateEn extends MusicBeatState
 			['VS Juize Credits'],
 			['JUIZEPANKA',		'nothing',		'Director and Sprites Stuff', 'https://github.com/Juanen100/VS-Juize',	0xFFFFD94F],
 			['EDGARXAMMAR',		'nothing',		'Artist', 'https://github.com/Juanen100/VS-Juize',	0xFFF28bb1],
-			['JUANEN100',		'nothing',		'Programmer', 'https://github.com/Juanen100/VS-Juize',	0xFFffeb23],
+			['JUANEN 100',		'nothing',		'Programmer', 'https://github.com/Juanen100/VS-Juize',	0xFFffeb23],
 			['SAMURAMOGEDEV',		'nothing',		'Charter', 'https://github.com/Juanen100/VS-Juize',	0xFF828b1d],
 			['KHARY',		'nothing',		'Voices (Dont know why we have "voices" lol)', 'https://github.com/Juanen100/VS-Juize',	0xFF728b5d],
 			['BITFOXORIGINAL', 'nothing', 'Instrumental', 'https://github.com/Juanen100/VS-Juize', 0xFFF28bb1],
