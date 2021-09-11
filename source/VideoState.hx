@@ -56,8 +56,8 @@ class VideoState extends MusicBeatState
 		videoFrames = Std.parseInt(Assets.getText(leSource.replace(".webm", ".txt")));
 		}
 		
-		fuckingVolume = FlxG.sound.music.volume;
-		FlxG.sound.music.volume = 0;
+		//fuckingVolume = FlxG.sound.music.volume;
+		//FlxG.sound.music.volume = 0;
 		var isHTML:Bool = false;
 		#if web
 		isHTML = true;
@@ -167,11 +167,12 @@ class VideoState extends MusicBeatState
 			prevSoundMultiplier = soundMultiplier;
 			}
 		}
-		
+		/*
 		if (notDone)
 		{
 			FlxG.sound.music.volume = 0;
 		}
+		*/
 		GlobalVideo.get().update(elapsed);
 
 		if (controls.RESET)
@@ -203,7 +204,7 @@ class VideoState extends MusicBeatState
 		if (controls.ACCEPT || GlobalVideo.get().ended)
 		{
 			notDone = false;
-			FlxG.sound.music.volume = fuckingVolume;
+			//FlxG.sound.music.volume = fuckingVolume;
 			txt.text = pauseText;
 			if (musicPaused)
 			{
