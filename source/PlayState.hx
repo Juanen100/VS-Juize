@@ -918,7 +918,7 @@ class PlayState extends MusicBeatState
 
 		strumLineNotes = new FlxTypedGroup<FlxSprite>();
 		add(strumLineNotes);
-		if (FlxG.save.data.splash)	
+		if (FlxG.save.data.splash && !FlxG.save.data.botplay)	
 		{
 			add(grpNoteSplashes);
 		}
@@ -2442,10 +2442,6 @@ class PlayState extends MusicBeatState
 						
 						if (FlxG.save.data.cpuStrums)
 						{
-							if(FlxG.save.data.botplay)
-							{
-								cpuStrums = playerStrums;
-							}
 							cpuStrums.forEach(function(spr:FlxSprite)
 							{
 								if (Math.abs(daNote.noteData) == spr.ID)

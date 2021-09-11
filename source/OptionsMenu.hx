@@ -64,7 +64,8 @@ class OptionsMenu extends MusicBeatState
 				#end
 				new FlashingLightsOption("Desactiva las notas parapadeantes que puedan causar epilepsia."),
 				new WatermarkOption("Activar y desactivar la marca de agua del engine."),
-				new BotPlay("Enseña tus charts con la opción de autoplay.")
+				new BotPlay("Enseña tus charts con la opción de autoplay."),
+				new SkipHaxeFlixelIntro("Habilita la intro de HaxeFlixel")
 			])
 	];
 

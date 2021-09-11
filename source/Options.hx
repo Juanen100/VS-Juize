@@ -97,6 +97,28 @@ class DFJKOption extends Option
 	}
 }
 
+class SkipHaxeFlixelIntro extends Option 
+{
+	public function new(desc:String)
+		{
+			super();
+			description = desc;
+		}
+	
+		public override function press():Bool
+		{
+			FlxG.save.data.skipIntro = !FlxG.save.data.skipIntro;
+			
+			display = updateDisplay();
+			return true;
+		}
+	
+		private override function updateDisplay():String
+		{
+			return  FlxG.save.data.skipIntro ? "Skip Haxe Intro On" : "Skip Haxe Intro Off";
+		}
+}
+
 class CpuStrums extends Option
 {
 	public function new(desc:String)
