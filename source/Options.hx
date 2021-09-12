@@ -296,27 +296,27 @@ class CustomNotes extends Option
 		public override function press():Bool
 		{
 			FlxG.save.data.notes = 'Normal';
-			display = "Custom Note - Normal";
+			display = "Custom Note Normal";
 			return true;
 		}
 	
 		public override function right():Bool 
 		{
 			FlxG.save.data.notes = 'Neo';
-			display = "Custom Note - Neo";
+			display = "Custom Note Neo";
 			return true;
 		}
 	
 		public override function left():Bool 
 		{
 			FlxG.save.data.notes = 'Juize';
-			display = "Custom Note - Juize";
+			display = "Custom Note Juize";
 			return true;
 		}
 		
 		private override function updateDisplay():String
 		{
-			return "Custom Note - " + FlxG.save.data.notes;
+			return "Custom Note " + FlxG.save.data.notes;
 		}
 	
 		override function getValue():String
@@ -341,7 +341,7 @@ class PlayOsuSound extends Option
 	
 		private override function updateDisplay():String
 		{
-			return "Play Hitsound: " + (!FlxG.save.data.xd ? "off" : "on");
+			return "Play Hitsound " + (!FlxG.save.data.xd ? "off" : "on");
 		}
 }
 
@@ -665,7 +665,7 @@ class AccuracyDOption extends Option
 
 	private override function updateDisplay():String
 	{
-		return "Accuracy Mode: " + (FlxG.save.data.accuracyMod == 0 ? "Accurate" : "Complex");
+		return "Accuracy Mode " + (FlxG.save.data.accuracyMod == 0 ? "Accurate" : "Complex");
 	}
 }
 
