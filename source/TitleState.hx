@@ -115,10 +115,14 @@ class TitleState extends MusicBeatState
 		#elseif CHARTING
 		FlxG.switchState(new ChartingState());
 		#else
-		new FlxTimer().start(1, function(tmr:FlxTimer)
-		{
-			startIntro();
-		});
+		if(!FlxG.save.data.skipIntro && !Intro.leftState) {
+			FlxG.switchState(new Intro());
+		} else {
+			new FlxTimer().start(1, function(tmr:FlxTimer)
+			{
+				startIntro();
+			});
+		}
 		#end
 	}
 
